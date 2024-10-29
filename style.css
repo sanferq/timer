@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(167, 132, 231, 1) 0%,
+    rgba(148, 166, 233, 1) 100%
+  );
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.131);
+  backdrop-filter: blur(15px);
+  border-radius: 45px;
+  padding: 20px;
+}
+
+.title-timer {
+  text-align: center;
+  font-size: 24px;
+}
+
+.additional-timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.131);
+  backdrop-filter: blur(15px);
+  border-radius: 45px;
+  padding: 10px;
+}
+
+.main-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-timer .time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.separator {
+  font-size: 30px;
+  margin: 0 5px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  font-family: "Red Hat Display", sans-serif;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: rgb(160, 143, 231);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+button svg {
+  transition: transform 0.4s ease;
+}
+
+button:hover svg {
+  transform: scale(2);
+}
+
+.time-input {
+  width: 60px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  background: none;
+
+
+}
+
+.time-input:focus {
+  border: none;
+  outline: none;
+}
